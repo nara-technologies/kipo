@@ -1,3 +1,4 @@
+from kipo.studio.server import run_server
+
 def studio():
-    """Launch Kipo Studio"""
-    print("Kipo Studio coming soon")
+    run_server()
