@@ -1,13 +1,9 @@
 import typer
 
+from kipo.commands.version import version
+from kipo.commands.studio import studio
+
 app = typer.Typer()
 
-@app.command()
-def version():
-    """Show Kipo version"""
-    print("Kipo v0.0.1")
-
-@app.command()
-def studio():
-    """Launch Kipo Studio"""
-    print("Kipo Studio coming soon")
+app.command()(version)
+app.command()(studio)
