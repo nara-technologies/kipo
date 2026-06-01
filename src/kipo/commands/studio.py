@@ -1,4 +1,4 @@
-from kipo.studio.server import run_server
+from kipo.studio.backend.server import run_server
 
 def studio():
     run_server()
